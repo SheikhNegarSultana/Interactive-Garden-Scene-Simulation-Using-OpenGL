@@ -1,4 +1,4 @@
-# 🌿 Garden Scene — OpenGL 2D Animation
+# 🌿 Garden Scene : OpenGL 2D Animation
 
 A fully interactive, animated 2D garden scene built with **OpenGL (GLUT)** in C++, developed as a Computer Graphics course project. The scene demonstrates core CG algorithms, 2D transformations, and a rich set of animated elements with dynamic weather and day/night transitions.
 
@@ -30,16 +30,16 @@ The scene renders a 1200×700 window depicting a lush garden environment featuri
 
 ### 🔄 2D Transformations
 All transformations are implemented manually via OpenGL matrix operations:
-- **Translation** — positioning scene objects
-- **Rotation** — wing flapping, bird animation
-- **Scaling** — resizing elements and reflections
-- **Reflection (X/Y axis)** — mirroring the airplane on turnaround
-- **Shear** — stylized structural elements
+- **Translation** - positioning scene objects
+- **Rotation** - wing flapping, bird animation
+- **Scaling** - resizing elements and reflections
+- **Reflection (X/Y axis)** - mirroring the airplane on turnaround
+- **Shear** - stylized structural elements
 
 ### 🌦️ Weather System
-- **Rain Mode** — 200 animated raindrops falling across the scene
-- **Storm Mode** — 400 heavy raindrops, strong wind boost to clouds, darkened sky with a purple-grey tint, and storm clouds
-- **Lightning** — randomized jagged bolts with glowing halos and branch forks
+- **Rain Mode** - 200 animated raindrops falling across the scene
+- **Storm Mode** - 400 heavy raindrops, strong wind boost to clouds, darkened sky with a purple-grey tint, and storm clouds
+- **Lightning** - randomized jagged bolts with glowing halos and branch forks
 - All weather effects influence the overall scene lighting and color
 
 ### 🌙 Day / Night Cycle
@@ -130,7 +130,7 @@ Link against `opengl32.lib`, `glu32.lib`, and `freeglut.lib` in your project set
 ## 📐 Technical Details
 
 - **Window size:** 1200 × 700 px
-- **Coordinate system:** Orthographic 2D — `(-600, 600)` × `(-350, 350)`
+- **Coordinate system:** Orthographic 2D - `(-600, 600)` × `(-350, 350)`
 - **Rendering:** Double-buffered RGBA with alpha blending enabled
 - **Frame rate:** ~60 FPS via `glutTimerFunc` at 16 ms intervals
 - **Blend mode:** `GL_SRC_ALPHA / GL_ONE_MINUS_SRC_ALPHA` for all transparency
